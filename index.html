@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="pol">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title><title></title></title>
+</head>
+<body>
+    <input id="odpowiedz" type="text">
+    <button onclick="sprawdzOdpowiedz()">sprawdz</button>
+    <div id="wynik"></div>
+<script>
+        function sprawdzOdpowiedz(){
+        var odpowiedz = document.getElementById("odpowiedz").value;
+        var wynik;
+        if (odpowiedz >= 18) {
+    wynik = "Macie 18";
+    }
+    else if (odpowiedz < 18) {
+    wynik = "nie macie 18";
+    }
+    document.getElementById("wynik").innerHTML = wynik;}
+    </script>
+    
+    
+    
+    
+</body>
+</html>
